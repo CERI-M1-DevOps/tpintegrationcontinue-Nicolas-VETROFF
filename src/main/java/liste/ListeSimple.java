@@ -6,6 +6,7 @@ public class ListeSimple {
 
     public long getSize() {
         return size;
+        
     }
 
     public void ajout(int element) {
