@@ -48,7 +48,7 @@ class ListeSimpleTest {
         listeATester.ajout(1);
         listeATester.ajout(2);
         listeATester.ajout(3);
-        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3)", listeATester.toString();
+        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3)", listeATester.toString());
     }
 
     @Test
@@ -124,7 +124,7 @@ class ListeSimpleTest {
         listeATester.ajout(2);
         listeATester.ajout(3);
         listeATester.supprimeTous(3);
-        assertEquals("ListeSimple(Noeud(2), Noeud(1))", listeATester.toString(), );
+        assertEquals("ListeSimple(Noeud(2), Noeud(1))", listeATester.toString());
         assertEquals(2, listeATester.getSize());
     }
 
