@@ -81,6 +81,7 @@ class ListeSimpleTest {
 
     @Test
     void supprimePremierAvecCourantNull() {
+        listeATester.ajout(2);
         listeATester.supprimePremier(1);
         assertEquals(null, listeATester.tete);
         assertEquals("ListeSimple()", listeATester.toString());
