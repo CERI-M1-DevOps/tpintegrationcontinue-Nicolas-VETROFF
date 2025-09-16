@@ -83,8 +83,8 @@ class ListeSimpleTest {
     void supprimePremierAvecCourantNull() {
         listeATester.ajout(2);
         listeATester.supprimePremier(1);
-        assertEquals(null, listeATester.tete);
-        assertEquals("ListeSimple()", listeATester.toString());
+        assertEquals(1, listeATester.getSize());
+        assertEquals("ListeSimple(Noeud(2))", listeATester.toString());
     }
 
     @Test
