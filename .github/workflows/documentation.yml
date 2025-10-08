@@ -6,22 +6,20 @@ on:
       - closed
 
 jobs:
-  Action:
-    name: Javadoc
-    if_merged:
-      if: github.event.pull_request.merged == true
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-        - name: Setup JAVA
-          uses: actions/setup-java@v4
-          with:
-            distribution: 'corretto'
-            java-version: '21'
-        - name: Mavec Javavadoc Generate
-          run: mvn -B javadoc:javadoc
-        - name: 
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup JAVA
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '21'
+      - name: Mavec Javavadoc Generate
+        run: mvn -B javadoc:javadoc
+      - name: 
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
