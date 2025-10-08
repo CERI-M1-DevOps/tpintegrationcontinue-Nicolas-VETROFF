@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mavec Javavadoc Generate
-        run: mvn -B javadoc::javadoc
+        run: mvn -B javadoc:javadoc
       - name: 
         uses: peaceiris/actions-gh-pages@v4
         with:
