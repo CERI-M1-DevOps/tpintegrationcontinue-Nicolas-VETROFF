@@ -21,6 +21,11 @@ public class ListeSimple {
             courant.setElement(nouvelleValeur);
     }
 
+    /**
+     * Modifie toutes les instances d'un objet dans la liste
+     * @param var1 élément à modifier
+     * @param var2 nouvelle élément
+     */
     public void modifieTous(Object element, Object nouvelleValeur) {
         Noeud courant = tete;
         while (courant != null) {
@@ -43,6 +48,10 @@ public class ListeSimple {
         return sb.toString();
     }
 
+    /**
+     * Supprime la première instance de l'objet trouvé dans la liste
+     * @param var1 élément à supprimer
+     */
     public void supprimePremier(Object element) {
         if (tete != null) {
             if (tete.getElement() == element) {
@@ -63,6 +72,10 @@ public class ListeSimple {
         }
     }
 
+    /**
+     * Supprime toutes les instances de l'objet trouvé dans la liste
+     * @param var1 élément à supprimer
+     */
     public void supprimeTous(int element) {
        tete = supprimeTousRecurs(element, tete);
     }
@@ -94,6 +107,9 @@ public class ListeSimple {
         }
     }
 
+    /**
+     * Inverse toute la liste
+     */
     public void inverser() {
         Noeud precedent = null;
         Noeud courant = tete;
@@ -117,6 +133,11 @@ public class ListeSimple {
         return precedent;
     }
 
+    /**
+     * Echanger de noeud entre eux
+     * @param r1 premier noeud
+     * @param r2 second noeud
+     */
     public void echanger(Noeud r1, Noeud r2) {
         Noeud precedentR1;
         Noeud precedentR2;

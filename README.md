@@ -10,3 +10,7 @@ ainsi que le nettoyage de fin de script.
 ## EXERCICE 2
 
 ## EXERCICE 3
+
+## EXERCICE 4
+
+## EXERCICE 5
