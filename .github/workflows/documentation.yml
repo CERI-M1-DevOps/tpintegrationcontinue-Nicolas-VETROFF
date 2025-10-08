@@ -17,7 +17,7 @@ jobs:
         with:
           distribution: 'corretto'
           java-version: '21'
-      - name: Mavec Javavadoc Generate
+      - name: Maven Javavadoc Generate
         run: mvn -B javadoc:javadoc
       - name: 
         uses: peaceiris/actions-gh-pages@v4
